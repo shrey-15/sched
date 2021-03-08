@@ -5,7 +5,7 @@
 }
 body{
     overflow: hidden;
-    background-color: #7bafd4;
+    background-color: #7DB0D5;
     z-index: 99;
 }
 .brdr{
@@ -27,7 +27,7 @@ body{
   }
   
   nav a:hover {
-    color:#7eafc5;
+    color:#fff;
   }
 
 .logo_title{
