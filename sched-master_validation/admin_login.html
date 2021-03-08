@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <title>Sched. | Admin Login</title>
+
+</head>
+
+
+<body style="height: 100vh">
+    <nav class="navbar fixed-top navbar-expand-xl ">
+        <a class="d-flex navbar-brand nav-title" href="./index.html">
+            <div class="d-flex justify-content-center align-items-center" id="checkmark_title">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 161.2 161.2"
+                    enable-background="new 0 0 161.2 161.2" xml:space="preserve">
+                    <path class="path" fill="none" stroke="#fff" stroke-miterlimit="10" d="M425.9,52.1L425.9,52.1c-2.2-2.6-6-2.6-8.3-0.1l-42.7,46.2l-14.3-16.4
+                              c-2.3-2.7-6.2-2.7-8.6-0.1c-1.9,2.1-2,5.6-0.1,7.7l17.6,20.3c0.2,0.3,0.4,0.6,0.6,0.9c1.8,2,4.4,2.5,6.6,1.4c0.7-0.3,1.4-0.8,2-1.5
+                              c0.3-0.3,0.5-0.6,0.7-0.9l46.3-50.1C427.7,57.5,427.7,54.2,425.9,52.1z" />
+                    <circle class="path" fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="80.6"
+                        cy="80.6" r="62.1" />
+                    <polyline class="path" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"
+                        stroke-miterlimit="10" points="113,52.8 
+                              74.1,108.4 48.2,86.4 " />
+
+                    <circle class="spin" fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10"
+                        stroke-dasharray="12.2175,12.2175" cx="80.6" cy="80.6" r="73.9" />
+
+                </svg>
+            </div>
+            <div class="d-flex justify-content-center align-items-center logo_title">Sched.</div>
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link1" href="./student_login.html"><button class="login-btn">Login</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid main d-flex justify-content-center align-items-center">
+        <section class="Form my-4 mx-5 ">
+            <div class="container-fluid">
+                <div class="row mainrow no-gutters">
+                    <div class="col-lg-5">
+                        <img src="./assets/img/undraw_authentication_fsn5.svg" class="vector" alt=""
+                            width="70%">
+                    </div>
+                    <div class="col-lg-4">
+
+                        <h2 class="heading">Hey there Admin!</h2>
+                        <form name="form" onsubmit="return validated()">
+                            <div class="form-row">
+                                <div class="col-lg-9">
+                                    <input type="text" name="username" placeholder="Username" class="form-control my-3 p-2">
+                                    <div id="username_error">Please enter your username</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-9">
+                                    <input type="password" autocomplete="off" name="password" placeholder="Password" class="form-control">
+                                    <div id="password_error">Please enter the password</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-lg-5">
+                                        <button type="submit" class="custom-btn btn-12"><span>Here!</span><span>Login</span></button>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <a href="#">Forgot password?</a>
+                        <!-- <p>Don'nt have an account? <a href="#">Register here</a></p>  -->
+                    </div>
+                    <script src="./assets/validation/valid.js"></script>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="d-flex justify-content-center align-items-center">
+
+        <p>&copy; Sched. 2021 | All rights reserved</p>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
