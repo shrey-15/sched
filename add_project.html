@@ -9,7 +9,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/add-p.css">
+ <link rel="stylesheet" href="./assets/css/add-p.css">
+  <link rel="stylesheet" href="./assets/css/style_home.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  
   <title>Sched. | Add Project</title>
 
 </head>
@@ -22,13 +25,13 @@
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px" y="0px" viewBox="0 0 161.2 161.2" enable-background="new 0 0 161.2 161.2" xml:space="preserve">
           <path class="path" fill="none" stroke="#7DB0D5" stroke-miterlimit="10" d="M425.9,52.1L425.9,52.1c-2.2-2.6-6-2.6-8.3-0.1l-42.7,46.2l-14.3-16.4
-                  c-2.3-2.7-6.2-2.7-8.6-0.1c-1.9,2.1-2,5.6-0.1,7.7l17.6,20.3c0.2,0.3,0.4,0.6,0.6,0.9c1.8,2,4.4,2.5,6.6,1.4c0.7-0.3,1.4-0.8,2-1.5
-                  c0.3-0.3,0.5-0.6,0.7-0.9l46.3-50.1C427.7,57.5,427.7,54.2,425.9,52.1z" />
+              c-2.3-2.7-6.2-2.7-8.6-0.1c-1.9,2.1-2,5.6-0.1,7.7l17.6,20.3c0.2,0.3,0.4,0.6,0.6,0.9c1.8,2,4.4,2.5,6.6,1.4c0.7-0.3,1.4-0.8,2-1.5
+              c0.3-0.3,0.5-0.6,0.7-0.9l46.3-50.1C427.7,57.5,427.7,54.2,425.9,52.1z" />
           <circle class="path" fill="none" stroke="#7DB0D5" stroke-width="4" stroke-miterlimit="10" cx="80.6" cy="80.6"
             r="62.1" />
           <polyline class="path" fill="none" stroke="#7DB0D5" stroke-width="6" stroke-linecap="round"
             stroke-miterlimit="10" points="113,52.8 
-                  74.1,108.4 48.2,86.4 " />
+              74.1,108.4 48.2,86.4 " />
 
           <circle class="spin" fill="none" stroke="#7DB0D5" stroke-width="4" stroke-miterlimit="10"
             stroke-dasharray="12.2175,12.2175" cx="80.6" cy="80.6" r="73.9" />
@@ -41,16 +44,20 @@
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon "></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
+    <div class="collapse navbar-collapse sticky" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto access-menu">
         <li class="nav-item">
           <a class="nav-link" href="#">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link1" href="#"><button class="login-btn">LOGOUT</button></a>
+        <li class="nav-link"><a href="">LOGIN <i class="fa fa-caret-down"></i></a>
+          <ul class="access-submenu">
+            <li><a href="./admin_login.html">Project Co-ordinator</a></li>
+            <li><a href="./mentor_login.html">Mentor</a></li>
+            <li><a href="./student_login.html">Team</a></li>
+
+          </ul>
+        </li>
         </li>
       </ul>
     </div>
@@ -65,54 +72,35 @@
         <form>
           <div class="row">
             <div class="form-group col-6">
-              <label for="username">Team Name</label>
+              <label for="team_name">Team Name</label>
               <input type="text" class="form-control" id="username" placeholder="Enter team name" required>
             </div>
             <div class="form-group col-6">
-              <label for="username">Project Name</label>
-              <input type="text" class="form-control" id="username" placeholder="Enter project name" required>
+              <label for="project_title">Project Title</label>
+              <input type="text" class="form-control" id="project_title" placeholder="Enter project title" required>
             </div>
           </div>
           <div class="row">
             <div class="form-group col-6">
-              <label for="username">College Name</label>
-              <input type="text" class="form-control" id="username" placeholder="Enter team name" required>
+              <label for="description">Description</label>
+              <input type="text" class="form-control" id="description" placeholder="Enter project description" required>
             </div>
             <div class="form-group col-6">
-              <label for="sup_id">Number of members</label>
-              <input type="number" class="form-control" id="sup_id" placeholder="Enter number of members in team "
+              <label for="domain">Domain</label>
+              <input type="text" class="form-control" id="domain" placeholder="Enter your domain"
                 required>
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-4">
-              <label for="username">Name</label>
-              <input type="text" class="form-control" id="username" placeholder="Enter full name" required>
+            <div class="form-group col-6">
+              <label for="mentor_pref">Mentor Preference</label>
+              <input type="text" class="form-control" id="mentor_pref" placeholder="Enter your mentor preference" required>
             </div>
-            <div class="form-group col-4">
-              <label for="email1">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter valid email id" required>
-            </div>
-            <div class="form-group col-4">
-              <label for="department">Department</label>
-              <input type="text" class="form-control" id="dept" placeholder="Department name" required>
-            </div>
+
           </div>
-          <div class="row">
-            <div class="form-group col-4">
-              <label for="username">Name</label>
-              <input type="text" class="form-control" id="username" placeholder="Enter full name" required>
-            </div>
-            <div class="form-group col-4">
-              <label for="email1">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter valid email id" required>
-            </div>
-            <div class="form-group col-4">
-              <label for="department">Department</label>
-              <input type="text" class="form-control" id="dept" placeholder="Department name" required>
-            </div>
-          </div>
-          <button type="submit" class="custom-btn btn-12"><span>Here!</span><span>Add project</span></button>
+
+
+          <button type="submit" class="custom-btn btn-12"><span>Here!</span><span>Request for approval</span></button>
         </form>
       </div>
       <div class="col-md-6 p-5">
