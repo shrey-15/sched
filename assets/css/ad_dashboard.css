@@ -283,6 +283,7 @@ a:hover {
 
 a:active,
 a:hover {
+    background-color: #f7f7fb;
     outline: 0;
     text-decoration: none;
 }
@@ -1424,7 +1425,7 @@ Left Navigation Sidebar
 }
 
 .nav-left-sidebar .navbar-nav .nav-link:focus,
-.nav-left-sidebar .navbar-nav .nav-link.active {
+.nav-left-sidebar .navbar-nav .nav-link:active {
     background-color: #e2e2eb;
     color: #3d405c;
     border-radius: 2px;
@@ -1484,7 +1485,7 @@ Leftsidebar - Primary
 }
 
 .sidebar-primary.nav-left-sidebar .navbar-nav .nav-link:focus,
-.sidebar-primary.nav-left-sidebar .navbar-nav .nav-link.active {
+.sidebar-primary.nav-left-sidebar .navbar-nav .nav-link:active {
     background-color: #5761c2;
     color: #fff;
     border-radius: 2px;
@@ -1518,7 +1519,7 @@ Leftsidebar - dark
     color: #efeff0;
 }
 
-.sidebar-dark.nav-left-sidebar .navbar-nav .nav-item {}
+
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-link {
     color: #c7c7c9;
@@ -1531,17 +1532,16 @@ Leftsidebar - dark
     border-radius: 2px;
 }
 
-.sidebar-dark.nav-left-sidebar .navbar-nav .nav-link:focus,
-.sidebar-dark.nav-left-sidebar .navbar-nav .nav-link.active {
-    background-color: #242849;
+.sidebar-dark.nav-left-sidebar .navbar-nav .nav-link:active {
     color: #fff;
+    background-color: #303033;
     border-radius: 2px;
 }
 
 .sidebar-dark.nav-left-sidebar .submenu .nav .nav-item .nav-link:hover {
     color: #fff;
     border-radius: 2px;
-    background-color: #242849;
+    background-color: #565782;
 }
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-item .badge{
@@ -2926,7 +2926,6 @@ btn-link
     border-bottom: 1px solid #e6e6f2;
 }
 
-.card-title {}
 
 .card-subtitle {
     font-size: 14px;
@@ -6462,8 +6461,113 @@ form.dropzone {
 
 
 /*----------------------
-9.2 Vector Map
+9.2 Track Projects
 ---------------------------*/
+.main-area{
+    margin-top: -2vw;
+    margin-left: -10vw;
+    padding: 1vw 5vw 1vw 3vw;
+}
+.teams{
+    margin-left: 5vw!important;
+}
+
+.trackcard {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    margin: 2vw 5vw;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    width: 110%;
+    height: auto;
+    padding:1vw;
+  }
+  
+.trackcard:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: ease-in 0.25s;
+}
+
+.progress-c{
+    border-radius: 50%;
+    z-index: 99;
+    width: 500%;
+    height: 100%;
+}
+.progress{
+    display: flex; justify-content: center;align-items: center;
+    margin-left: -5vw;
+    border-radius: 50%;
+    z-index: 99;
+    background: white;
+    width: 500%;
+    height: 100%;
+}
+
+.progress .track, .progress .fill{
+	fill: rgba(0, 0, 0, 0);
+	stroke-width: 5;
+	transform: rotate(90deg)translate(0px, -80px);
+}
+.progress .track{
+	stroke: rgba(141, 145, 148, 0.466);
+}
+.progress .value{
+	fill: rgb(90, 90, 90);
+}
+.progress .fill {
+	stroke: rgb(255, 255, 255);
+	stroke-dasharray: 219.99078369140625;
+	stroke-dashoffset: -219.99078369140625;
+	transition: stroke-dashoffset 1s;
+}
+.progress.blue .fill {
+	stroke: rgb(129, 162, 211);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+		cursor: default;
+}
+  
+  .price-title {
+    width: 100%;
+  }
+  
+  .card-title {
+    float: right;  
+    position: relative;
+    margin: 0;
+    font-size: 1.5vw;
+    text-align: right;
+  }
+  .team {
+    width: 100%;
+    justify-content: flex-end;
+    margin: 2vw 1vw 0vw 0vw;
+  }
+  .team-icon{
+     
+      padding:2px;
+  }
+  
+  .teammates{
+    align-items: right; 
+    border-radius: 50%;
+    width: 100%;
+    box-shadow: solid #1a1a1aaf 5px 5px 10px;
+  }
+
+  .team-icon:hover {
+      cursor: pointer;
+      opacity: 0.5;
+  }
+  
 
 
 /*-------------------------------------------------------------------
@@ -6513,6 +6617,7 @@ Media Query
 
 .accept{
     margin-top: -1vw;
+    margin: 1vw;
 }
 
 

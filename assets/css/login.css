@@ -76,10 +76,6 @@ body{
     outline: none!important;
 }
 
-footer{
-    background-color: rgba(0, 0, 0, 0.719);
-    padding: 0.25vw;
-}
 
 .checkmark {
     width: 17vw;
@@ -102,12 +98,6 @@ footer{
     -webkit-transform-origin: 50% 50%;
   }
   
-  p {
-    color: rgba(248, 245, 245, 0.822);
-    font-size: 14px;
-    text-align: center;
-    margin: 5px auto;
-  }
 
   /*_______Button__________*/
 
@@ -263,6 +253,7 @@ footer{
     padding:2vw;
       background-color: #fff;
       border-radius: 5px;
+      box-shadow: solid rgba(0, 0, 0, 0.582) 10px 15px 30px;
   }
 
   .heading{

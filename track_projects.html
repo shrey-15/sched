@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="./assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="./assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="./assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="./assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="./assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="./assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link rel="stylesheet" href="./assets/css/ad_dashboard.css">
+    <title>Sched. |Project Co-ordinator</title>
+</head>
+
+<body>
+
+    <div class="dashboard-main-wrapper">
+
+        <div class="dashboard-header">
+            <nav class="navbar fixed-top navbar-expand-xl ">
+                <!-- navbar here-->
+                <a class="d-flex navbar-brand nav-title" href="./index.html">
+                    <div class="d-flex justify-content-center align-items-center" id="checkmark_title">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 161.2 161.2"
+                            enable-background="new 0 0 161.2 161.2" xml:space="preserve">
+                            <path class="path" fill="none" stroke="#7DB0D5" stroke-miterlimit="10" d="M425.9,52.1L425.9,52.1c-2.2-2.6-6-2.6-8.3-0.1l-42.7,46.2l-14.3-16.4
+                            c-2.3-2.7-6.2-2.7-8.6-0.1c-1.9,2.1-2,5.6-0.1,7.7l17.6,20.3c0.2,0.3,0.4,0.6,0.6,0.9c1.8,2,4.4,2.5,6.6,1.4c0.7-0.3,1.4-0.8,2-1.5
+                            c0.3-0.3,0.5-0.6,0.7-0.9l46.3-50.1C427.7,57.5,427.7,54.2,425.9,52.1z" />
+                            <circle class="path" fill="none" stroke="#7DB0D5" stroke-width="4" stroke-miterlimit="10"
+                                cx="80.6" cy="80.6" r="62.1" />
+                            <polyline class="path" fill="none" stroke="#7DB0D5" stroke-width="6" stroke-linecap="round"
+                                stroke-miterlimit="10" points="113,52.8 
+                            74.1,108.4 48.2,86.4 " />
+
+                            <circle class="spin" fill="none" stroke="#7DB0D5" stroke-width="4" stroke-miterlimit="10"
+                                stroke-dasharray="12.2175,12.2175" cx="80.6" cy="80.6" r="73.9" />
+
+                        </svg>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center logo_title">Sched.</div>
+                </a>
+            </nav>
+        </div>
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Actions
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./manage_mentors.html">Manage Mentors</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="pages/manage_teams.html">Manage Teams</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="pages/track_projects.html">Track Projects</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="pages/form-elements.html">Change Password</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="pages/form-elements.html">Logout</a>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="dashboard-wrapper">
+            <div class="dashboard-ecommerce">
+                <div class="container-fluid dashboard-content ">
+
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header">
+                                <h2 class="pageheader-title">Tracking Projects</h2>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ecommerce-widget container-fluid">
+
+                        <div class="row main-area">
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-12 m-3 teams">
+
+                                <div class="d-flex justify-content-center align-items-center row trackcard">
+
+                                    <div class="d-flex justify-content-center col-3 progress-c">
+                                        <svg class="progress blue noselect" data-progress="45" x="0px" y="0px"
+                                            viewBox="0 0 80 80">
+                                            <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <path class="fill" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
+                                            <text class="value" x="37%" y="57%">0%</text>
+                                        </svg>
+                                    </div>
+                                    <div class="price-title d-flex col-9">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h2 class=" card-title">Project Name</h2>
+                                                <h2 class=" card-title" style="font-size:1.2vw;font-weight: 100">Team
+                                                    Name</h2>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="team d-flex row">
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                    <div class="col-2 team-icon">
+                                                        <img class="teammates" src="./assets/img/teammate.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <script src="./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+            <!-- bootstap bundle js -->
+            <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+            <!-- slimscroll js -->
+            <script src="./assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+            <!-- main js -->
+            <script src="./assets/js/main-js.js"></script>
+            <!-- chart chartist js -->
+            <script src="./assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+            <!-- sparkline js -->
+            <script src="./assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+            <!-- morris js -->
+            <script src="./assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+            <script src="./assets/vendor/charts/morris-bundle/morris.js"></script>
+            <!-- chart c3 js -->
+            <script src="./assets/vendor/charts/c3charts/c3.min.js"></script>
+            <script src="./assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+            <script src="./assets/vendor/charts/c3charts/C3chartjs.js"></script>
+            <script src="./assets/js/dashboard-ecommerce.js"></script>
+</body>
+
+</html>
