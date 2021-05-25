@@ -260,3 +260,47 @@ body{
     font-weight: 800;
     color: #3F3D56;
 }  
+
+/* ----------------------team-reg----------------------- */
+
+form input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  margin: 0;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="number"] {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1.2vw;
+  padding: 0.8em 0.5em;
+  border-radius: 2px;
+}
+form input[type="text"]:focus, form input[type="password"]:focus, form input[type="email"]:focus, form input[type="number"]:focus {
+  background: #fff;
+}
+.msg {
+  display: block;
+  background: #e9d9d9;
+  padding: 2px 5px;
+  color: rgb(175, 80, 80);
+}
+
+form label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+}
+form label.floatLabel {
+  top: -11px;
+  background-color: rgba(255, 255, 255);
+  font-size: 14px;
+}
