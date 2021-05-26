@@ -176,7 +176,7 @@ and set 'stroke-dasharray' and
 
 var $password = $("#password");
 var $confirmPassword = $("#confirm_password");
-
+var $validemail = $("#stud_email");
 //Hide hints
 $("form .msg").hide();
 
@@ -187,25 +187,12 @@ function isPasswordValid() {
 function arePasswordsMatching() {
   return $password.val() === $confirmPassword.val();
 }
-function ValidateEmail(input) {
+function isEmailValid() {
 
-    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  return $validemail.val().match(validRegex);
   
-    if (input.value.match(validRegex)) {
-  
-        $("form .msg").hide();
-  
-      return true;
-  
-    } else {
-  
-        $("form .msg").show();
-  
-      return false;
-  
-    }
-  
-  }
+}
 function canSubmit() {
   return isPasswordValid() && arePasswordsMatching();
 }
@@ -232,6 +219,17 @@ function confirmPasswordEvent() {
   }
 }
 
+function validEmailEvent() {
+  //Find out if password and confirmation match
+  if(isEmailValid()) {
+    //Hide hint if match
+    $validemail.next().hide();
+  } else {
+    //else show hint 
+    $validemail.next().show();
+  }
+}
+
 function enableSubmitEvent() {
   $("#submit").prop("disabled", !canSubmit());
 }
@@ -241,5 +239,6 @@ $password.focus(passwordEvent).keyup(passwordEvent).keyup(confirmPasswordEvent).
 
 //When event happens on confirmation input
 $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
 
 enableSubmitEvent();
