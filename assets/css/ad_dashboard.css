@@ -344,7 +344,16 @@ input[type=file] {
 }
 
 
+.logout{
+    position: fixed;
+    right: 10px;
+    top:10px;
+}
 
+.log-head{
+    font-size: 1.2vw;
+    color: #333;
+}
 
 
 button:focus {
@@ -2556,15 +2565,16 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 /*--- btn dark --*/
 
 .btn-dark {
+    font-size: 1vw;
     color: #fff;
     background-color: #2e2f39;
     border-color: #2e2f39;
 }
 
 .btn-dark:hover {
-    color: #2e2f39;
-    background-color: #d7d7df;
-    border-color: #d7d7df;
+    color: #fff;
+    background-color: #5f5f61;
+    border-color: #58585a;
 }
 
 .btn-dark.focus,
