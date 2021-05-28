@@ -1738,8 +1738,13 @@ Pageheader
 }
 
 .pageheader-title {
-    font-size: 24px;
+    
     margin-left: 1vw;
+}
+
+.sub-text{
+    margin: 1vw;
+    color:#5778b4;
 }
 
 .pageheader-text {
@@ -1750,6 +1755,7 @@ Pageheader
 /* -------------------- Mentor Table ----------------------- */
 
 table{
+    font-size: 1.2vw;
     margin: 2vw;
 }
 
@@ -1797,9 +1803,6 @@ table{
     margin-bottom: 15px;
 }
 
-.sell-ratio .progress-bar {
-    background-color: #25d5f2;
-}
 
 
 /* ==========================================================================
@@ -1857,11 +1860,6 @@ table{
     background-color: #f9f9fc;
     border-bottom-left-radius: .25rem;
     border-bottom-right-radius: .25rem;
-}
-
-.dashboard-influence .progress {
-    width: 86%;
-    background-color: #ededfa;
 }
 
 .campaign-table {}
@@ -3193,13 +3191,8 @@ btn-link
 /* -----------------------
 2.5  Modals
 -------------------------*/
-
-.bd-example-row .row>.col,
-.bd-example-row .row>[class^=col-] {
-    padding-top: .75rem;
-    padding-bottom: .75rem;
-    background-color: rgba(86, 61, 124, .15);
-    border: 1px solid rgba(86, 61, 124, .2);
+.modal-title{
+    float: right;
 }
 
 
@@ -4225,7 +4218,7 @@ Pills vertical
 
 .table thead th,
 .table th {
-    color: #7DB0D5;
+    color: #68a3ce;
     font-family: 'Circular Std Medium';
 }
 
@@ -6464,30 +6457,50 @@ form.dropzone {
 9.2 Track Projects
 ---------------------------*/
 .main-area{
-    margin-top: -2vw;
-    margin-left: -10vw;
+    margin-top: 2vw;
     padding: 1vw 5vw 1vw 3vw;
 }
-.teams{
-    margin-left: 5vw!important;
-}
 
-.trackcard {
+
+.tcard {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    margin: 2vw 5vw;
     border-radius: 5px;
-    background-color: #f1f1f1;
+    background-color: #383838;
     width: 110%;
     height: auto;
     padding:1vw;
   }
   
-.trackcard:hover{
+.tcard:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: ease-in 0.25s;
 }
 
+
+
+
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+		cursor: default;
+}
+  
+  .price-title {
+    width: 100%;
+  }
+  
+  .card-title {
+    color: #fff;
+    position: relative;
+    margin: 0.5vw;
+  }
+  
 .progress-c{
     border-radius: 50%;
     z-index: 99;
@@ -6534,41 +6547,6 @@ form.dropzone {
     user-select: none;
 		cursor: default;
 }
-  
-  .price-title {
-    width: 100%;
-  }
-  
-  .card-title {
-    float: right;  
-    position: relative;
-    margin: 0;
-    font-size: 1.5vw;
-    text-align: right;
-  }
-  .team {
-    width: 100%;
-    justify-content: flex-end;
-    margin: 2vw 1vw 0vw 0vw;
-  }
-  .team-icon{
-     
-      padding:2px;
-  }
-  
-  .teammates{
-    align-items: right; 
-    border-radius: 50%;
-    width: 100%;
-    box-shadow: solid #1a1a1aaf 5px 5px 10px;
-  }
-
-  .team-icon:hover {
-      cursor: pointer;
-      opacity: 0.5;
-  }
-  
-
 
 /*-------------------------------------------------------------------
 Media Query
@@ -6774,9 +6752,7 @@ Media Query
         border-bottom: transparent;
         border-right: transparent !important;
     }
-    .dashboard-influence .progress {
-        width: 74%;
-    }
+   
     .footer {
         margin-left: 0px;
     }
@@ -6812,3 +6788,40 @@ Media Query
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width:320px) {}
+
+
+#completed{
+    color: #04a17f;
+}
+#notcompleted{
+    color: rgb(197, 64, 64);
+}
+
+/* ---------------------------Mentor Dashboard------------------------ */
+.barras {
+    margin:10px auto;
+    border-radius: 10px;
+  }
+  .barra {
+      background:#fff; 
+    margin:10px;
+    border-radius: 10px;
+  }
+  .barra-nivel {
+    height:30px; 
+    background:#4080ac;
+    width:1px;
+    -webkit-transition: width 1s ease;
+    -moz-transition: width 1s ease;
+    transition: width 1s ease;
+    border-radius: 10px;
+  }
+  .valor-nivel {
+    line-height:1.5vw; 
+    color:rgb(255, 254, 254); 
+    margin-left:10px; 
+    font-size:1.2vw;
+  }
+  .mentor-title{
+      margin: 2vw;
+  }

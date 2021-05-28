@@ -125,8 +125,36 @@ jQuery(document).ready(function($) {
    // });
 
 
-
+// Progress bars
+$('.barra-nivel').each(function() {
+  var valorLargura = $(this).data('nivel');
+  var valorNivel = $(this).html("<span class='valor-nivel'>"+valorLargura+"</span>");
+    $(this).animate({
+        width: valorLargura
+    });
+});
    
+
+//accept request modal
+
+$(document).ready(function(){
+  var show_btn=$('.request');
+  //$("#testmodal").modal('show');
+  
+    show_btn.click(function(){
+      $("#requestmodal").modal('show');
+  })
+});
+
+$(function() {
+        $('#viewbtn').on('click', function( e ) {
+            Custombox.open({
+                target: '#viewbtn',
+                effect: 'fadein'
+            });
+            e.preventDefault();
+        });
+    });
    
 
 // });
@@ -242,3 +270,5 @@ $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(e
 
 
 enableSubmitEvent();
+
+ 
