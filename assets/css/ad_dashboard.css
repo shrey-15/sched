@@ -394,7 +394,6 @@ button.btn {}
 
 button.btn-default {}
 
-button.btn-primary {}
 
 address {}
 
@@ -538,6 +537,13 @@ address {}
     font-weight: 500;
     margin-bottom: 5px;
 }
+
+#disabled{
+    background-color: #8ec0ad!important;
+    border-color: #e6f8ea;
+}
+
+
 
 
 /*-----------------------
@@ -2363,40 +2369,6 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 
 /*--- btn primary --*/
 
-.btn-primary {
-    color: #fff;
-    background-color: #5969ff;
-    border-color: #5969ff;
-}
-
-.btn-primary:hover {
-    color: #fff;
-    background-color: #4656e9;
-    border-color: #4656e9;
-}
-
-.btn-primary.focus,
-.btn-primary:focus {
-    color: #fff;
-    background-color: #4656e9;
-    border-color: #4656e9;
-    box-shadow: 0 0 0 1px rgb(37, 52, 158);
-}
-
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgb(37, 52, 158);
-}
-
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #4656e9;
-    border-color: #4656e9;
-}
-
 
 /*--- btn secondary --*/
 
@@ -2433,8 +2405,8 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 
 .btn-success {
     color: #fff;
-    background-color: #2ec551;
-    border-color: #2ec551;
+    background-color: #59bd70;
+    border-color: #52ad67;
 }
 
 .btn-success:hover {
@@ -2895,7 +2867,7 @@ btn-link
 }
 
 .btn-primary-link {
-    color: #5969ff !important;
+    color: #6b74be !important;
 }
 
 .btn-brand-link {
@@ -6457,9 +6429,14 @@ form.dropzone {
 9.2 Track Projects
 ---------------------------*/
 .main-area{
-    margin-top: 2vw;
-    padding: 1vw 5vw 1vw 3vw;
+    padding: 1vw;
 }
+
+.btn-primary{
+    background-color: #4f7cc9;
+}
+
+
 
 
 .tcard {
@@ -6473,7 +6450,7 @@ form.dropzone {
   
 .tcard:hover{
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.025);
     transition: ease-in 0.25s;
 }
 
@@ -6502,6 +6479,7 @@ form.dropzone {
   }
   
 .progress-c{
+    margin-left: 1vw;
     border-radius: 50%;
     z-index: 99;
     width: 500%;
