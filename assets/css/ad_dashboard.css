@@ -2418,9 +2418,10 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 /*--- btn success --*/
 
 .btn-success {
+    border-radius: 5px;
     color: #fff;
     background-color: #59bd70;
-    border-color: #52ad67;
+    border-color: #78cc8c;
 }
 
 .btn-success:hover {
@@ -2449,22 +2450,23 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 /*--- btn danger --*/
 
 .btn-danger {
+    border-radius: 5px;
     color: #fff;
-    background-color: #cf3e4d;
-    border-color: #ef172c;
+    background-color: #da515f;
+    border-color: #e06470;
 }
 
 .btn-danger:hover {
     color: #fff;
-    background-color: #da0419;
-    border-color: #da0419;
+    background-color: #c72f3e;
+    border-color: #bd4d58;
 }
 
 .btn-danger.focus,
 .btn-danger:focus {
     color: #fff;
-    background-color: #da0419;
-    border-color: #da0419;
+    background-color: #c2404d;
+    border-color: #b65b64;
     box-shadow: 0 0 0 1px rgb(218, 4, 25);
 }
 
@@ -2472,8 +2474,8 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 .btn-danger:not(:disabled):not(.disabled):active,
 .show>.btn-danger.dropdown-toggle {
     color: #fff;
-    background-color: #da0419;
-    border-color: #da0419;
+    background-color: #c43443;
+    border-color: #c0404d;
 }
 
 
@@ -3179,7 +3181,10 @@ btn-link
 2.5  Modals
 -------------------------*/
 .modal-title{
-    float: right;
+    position: fixed;
+    top:0%;
+    left:0%;
+    padding: 1vw;
 }
 
 
