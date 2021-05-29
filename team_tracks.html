@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/vendor/charts/c3charts/c3.css">
     <link rel="stylesheet" href="./assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
     <link rel="stylesheet" href="./assets/css/ad_dashboard.css">
-    <title>Sched. |Project Co-ordinator</title>
+    <title>Sched. |Team</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         <div class="dashboard-header">
             <nav class="navbar fixed-top navbar-expand-xl ">
                 <!-- navbar here-->
-                <a class="d-flex navbar-brand nav-title" href="./index.html">
+                <a class="d-flex navbar-brand nav-title " href="./index.html">
                     <div class="d-flex justify-content-center align-items-center" id="checkmark_title">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 161.2 161.2"
@@ -47,7 +47,7 @@
                     <div class="d-flex justify-content-center align-items-center logo_title">Sched.</div>
                 </a>
                 <a class="d-flex  justify-content-center align-items-center logout" href="./index.html">
-                    <p class="log-head">Project Co-ordinator | </p>&nbsp;<button class="btn btn-dark">LogOut</button>
+                    <p class="log-head">Team Name | </p>&nbsp;<button class="btn btn-dark">LogOut</button>
                 </a>
             </nav>
         </div>
@@ -62,21 +62,18 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav flex-column">
                             <li class="nav-divider">
-                                Actions
+                                Team Dashboard
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="./admin.html">Home</a>
+                                <a class="nav-link" href="./team.html">My Team</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="./manage_mentors.html">Manage Mentors</a>
+                                <a class="nav-link" href="./project.html">My Project</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="./manage_teams.html">Manage Teams</a>
+                                <a class="nav-link" href="./team_tracks.html">Track Progress</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="pages/form-elements.html">Change Password</a>
-                            </li>
-                        
+
                         </ul>
                     </div>
                 </nav>
@@ -90,31 +87,18 @@
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
-                                <h2 class="pageheader-title">Tracking Projects</h2><br>
-                                <h4 class="sub-text">Team name-Project Name</h4>
+                                <h2 class="pageheader-title">Project Progress </h2>
+
+
                             </div>
-                        </div>
-                    </div>
-                    <div class="row" style="padding: 1vw;">
-                        <div class="col-md-2 col-12">
-                            Student name 1
-                        </div>
-                        <div class="col-md-2 col-12">
-                            Student name 2
-                        </div>
-                        <div class="col-md-2 col-12">
-                            Student name 3
-                        </div>
-                        <div class="col-md-2 col-12">
-                            Student name 4
                         </div>
                     </div>
 
                     <div class="ecommerce-widget container-fluid">
 
-                        <div class="row main-area d-flex justify-content-center align-items-center ">
+                        <div class="row main-area d-flex justify-content-center align-items-center " style="margin-bottom: 2vw;">
 
-                            <div class="d-flex justify-content-center align-items-center col-12 col-md-2 progress-c">
+                            <div class="d-flex justify-content-center align-items-center col-12 col-md-2 progress-c" style="margin-left: -5vw;">
                                 <svg class="progress blue noselect" data-progress="40" x="0px" y="0px"
                                     viewBox="0 0 80 80">
                                     <path class="track" d="M5,40a35,35 0 1,0 70,0a35,35 0 1,0 -70,0" />
@@ -129,7 +113,7 @@
                                             <th scope="col">Assignment No.</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Deadline</th>
-                                            
+                                            <th scope="col">Submit</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -137,32 +121,32 @@
                                             <td>Assignment 1</td>
                                             <td id="completed">Completed</td>
                                             <td>28 May, 2021 <span> | 5:00 PM</span></td>
-                                            
+                                            <td><button class="btn btn-primary disabled" id="disabled">Submit</button></td>
                                         </tr>
 
                                         <tr>
                                             <td>Assignment 2</td>
                                             <td id="completed">Completed</td>
                                             <td>28 May, 2021 <span> | 5:00 PM</span></td>
-                                            
+                                            <td><button class="btn btn-primary disabled" id="disabled">Submit</button></td>
                                         </tr>
                                         <tr>
                                             <td>Assignment 3</td>
                                             <td id="notcompleted">Not Completed</td>
                                             <td>30 May, 2021<span> | 11:59 PM</span></td>
-                                          
+                                           <td><button class="btn btn-primary">Submit</button></td>
                                         </tr>
                                         <tr>
                                             <td>Assignment 4</td>
                                             <td id="notcompleted">Not Completed</td>
                                             <td>30 May, 2021<span> | 11:59 PM</span></td>
-                                          
+                                           <td><button class="btn btn-primary">Submit</button></td>
                                         </tr>
                                         <tr>
                                             <td>Assignment 5</td>
                                             <td id="notcompleted">Not Completed</td>
                                             <td>30 May, 2021<span> | 11:59 PM</span></td>
-                                           
+                                           <td><button class="btn btn-primary">Submit</button></td>
                                         </tr>
                                       
                                        
@@ -172,33 +156,32 @@
                             </div>
 
                         </div>
-
-
+                        
 
                     </div>
                 </div>
 
-
             </div>
-            <script src="./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-            <!-- bootstap bundle js -->
-            <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-            <!-- slimscroll js -->
-            <script src="./assets/vendor/slimscroll/jquery.slimscroll.js"></script>
-            <!-- main js -->
-            <script src="./assets/js/main-js.js"></script>
-            <!-- chart chartist js -->
-            <script src="./assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
-            <!-- sparkline js -->
-            <script src="./assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
-            <!-- morris js -->
-            <script src="./assets/vendor/charts/morris-bundle/raphael.min.js"></script>
-            <script src="./assets/vendor/charts/morris-bundle/morris.js"></script>
-            <!-- chart c3 js -->
-            <script src="./assets/vendor/charts/c3charts/c3.min.js"></script>
-            <script src="./assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-            <script src="./assets/vendor/charts/c3charts/C3chartjs.js"></script>
-            <script src="./assets/js/dashboard-ecommerce.js"></script>
+        </div>
+        <script src="./assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+        <!-- bootstap bundle js -->
+        <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <!-- slimscroll js -->
+        <script src="./assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+        <!-- main js -->
+        <script src="./assets/js/main-js.js"></script>
+        <!-- chart chartist js -->
+        <script src="./assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+        <!-- sparkline js -->
+        <script src="./assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+        <!-- morris js -->
+        <script src="./assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+        <script src="./assets/vendor/charts/morris-bundle/morris.js"></script>
+        <!-- chart c3 js -->
+        <script src="./assets/vendor/charts/c3charts/c3.min.js"></script>
+        <script src="./assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+        <script src="./assets/vendor/charts/c3charts/C3chartjs.js"></script>
+        <script src="./assets/js/dashboard-ecommerce.js"></script>
 </body>
 
 </html>

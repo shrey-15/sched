@@ -1405,8 +1405,8 @@ Left Navigation Sidebar
 .nav-left-sidebar .navbar-nav .nav-link {
     font-size: 14px;
     padding: 12px;
-    /* margin-bottom: 2px; */
-    color: #71789e;
+    /* margin-bott1im==om: 2px; */
+    color: #a1a4b4!important;
     transition: 0.3s;
 }
 
@@ -1656,7 +1656,7 @@ Container / Wrapper
     position: relative;
     left: 0;
     margin-left: 264px;
-    min-height: 870px !important;
+    /* min-height: 870px !important; */
 }
 
 .dashboard-content {
@@ -2412,7 +2412,7 @@ clip-path: polygon(10% 25%, 10% 0, 35% 0%, 65% 0%, 90% 0, 90% 25%, 90% 50%, 91% 
 
 .vector{
     margin-left: 5vw;
-    width:60%;
+    width:80%;
 }
 
 /*--- btn success --*/
@@ -6499,6 +6499,7 @@ form.dropzone {
   }
   
 .progress-c{
+    margin-top: 2vw;
     margin-left: 1vw;
     border-radius: 50%;
     z-index: 99;
@@ -6823,3 +6824,70 @@ Media Query
   .mentor-title{
       margin: 2vw;
   }
+
+  .box{
+      padding: 0.5vw;
+      font-size: 1.2vw!important;
+  }
+  .floatLabel {
+    font-size: 1.2vw;
+    color: #4d7daa;
+    font-weight: 600;
+  }
+  .side-image{
+      padding-top: 9vw;
+  }
+
+  /* ------------------------------ Team cards----------------------------- */
+
+  .teamcard
+{
+    padding: 1.5vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+    background-color:#f6fbfd;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition:    all 0.7s ease-in-out;
+    -o-transition:      all 0.7s ease-in-out;
+    -ms-transition:     all 0.7s ease-in-out;
+    border-radius: 5px;
+    border-bottom: 5px solid #5596be;
+/*
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.2);
+*/
+}
+.photo
+{
+    z-index: 3;
+    border-radius: 50%;
+    height: 11.5vh;
+    width: 5vw;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -moz-transition:    top 0.7s ease-in-out, background 0.15s ease;
+    -o-transition:      top 0.7s ease-in-out, background 0.15s ease;
+    -ms-transition:     top 0.7s ease-in-out, background 0.15s ease;
+}
+
+.details{
+    font-size: 1.2vw;
+    list-style-type: none;
+    color: rgb(82, 79, 79);
+}
+
+
+
+
+
